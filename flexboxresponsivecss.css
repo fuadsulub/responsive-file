@@ -1,0 +1,54 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body{
+  font-family: "Roboto", sans-serif;
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.ptoduct-showcase{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  gap: 20px;
+}
+img{
+  max-width: 100%;
+  border-radius: 8px;
+}
+.product-card{
+  min-width:200px;
+  width:calc(25% - 20px);
+  padding: 20px;
+  background-color:#ffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+/* laptop */
+@media(max-width:1200px){
+.product-card{
+width: calc(33% - 20px);
+}
+}
+
+/* tablet */
+
+@media(max-width:768px){
+  .product-card{
+    width:calc(50% - 20px);
+
+  }
+}
+/* phones  */
+
+@media(max-width:480px){
+  .product-card{
+    width: 100%;
+  }
+}
